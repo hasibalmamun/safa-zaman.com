@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title> Practice Website </title>
+      
+      </head>
+      <style>
+         body, html {
+  height: 93%;
+}
+body {
+        background-image: url("Media/BPIC.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 16%;
+  left: 73%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.text {
+  margin: 0;
+  position: absolute;
+  top: 23%;
+  left: 73%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.button {
+  margin: 0;
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.video {
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 55%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+
+}
+
+
+</style>
+
+
+<body>
+
+
+      <br>
+      <marquee> <h1 style="color: #000000;"> Wish You A Very Happy Birthday, SAFA</h1> </marquee>
+
+
+    <div class="center"> 
+    <button type="button" onclick="alert('Hey CHUBBA WUBBA!')" >Tap on Me First!</button>
+    </div>
+
+
+
+<div class="text">  
+        <h1>
+            <a href="Birthday.html"> <h3>Happy Birthday Card</h3></a>
+          </h1>
+        </div>
+
+        <div class="video">  
+              <a href="Video.html"> <h2>A Small Present</h2></a>
+          </div>
+
+
+ <div class="button">  
+        <h3> Do you want to see me? </h3>
+        <button onclick="showContent()">Here I am</button>
+        
+        <template>
+          <img src="Media/Front.jpg" width="450" height="700">
+        </template>
+        
+        <script>
+        function showContent() {
+          var temp = document.getElementsByTagName("template")[0];
+          var clon = temp.content.cloneNode(true);
+          document.body.appendChild(clon);
+        }
+        </script>
+         </div>
+    
+
+    </body>
+</html>
